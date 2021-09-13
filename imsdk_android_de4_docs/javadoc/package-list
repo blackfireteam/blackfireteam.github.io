@@ -1,0 +1,15 @@
+com.masonsoft.imsdk
+com.masonsoft.imsdk.annotation
+com.masonsoft.imsdk.common
+com.masonsoft.imsdk.core
+com.masonsoft.imsdk.core.block
+com.masonsoft.imsdk.core.db
+com.masonsoft.imsdk.core.message
+com.masonsoft.imsdk.core.message.packet
+com.masonsoft.imsdk.core.observable
+com.masonsoft.imsdk.core.processor
+com.masonsoft.imsdk.core.proto
+com.masonsoft.imsdk.core.session
+com.masonsoft.imsdk.lang
+com.masonsoft.imsdk.user
+com.masonsoft.imsdk.util
