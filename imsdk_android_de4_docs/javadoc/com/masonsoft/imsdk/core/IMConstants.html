@@ -240,16 +240,20 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#isIdMatch-long-long-">isIdMatch</a></span>(long&nbsp;id1,
          long&nbsp;id2)</code>
-<div class="block">当两个 id 相等或者其中任意一个 id 为 ID_ANY 时，则匹配成功。</div>
+<div class="block">当两个 id 相等或者其中任意一个 id 为 <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#ID_ANY">ID_ANY</a> 时，则匹配成功。</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#trueOfFalse-boolean-">trueOfFalse</a></span>(boolean&nbsp;input)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#trueOfFalse-boolean-">trueOfFalse</a></span>(boolean&nbsp;input)</code>
+<div class="block">将 bool 值转换为 <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#TRUE">TRUE</a> 或者 <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#FALSE">FALSE</a></div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#trueOfFalse-int-">trueOfFalse</a></span>(int&nbsp;input)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#trueOfFalse-int-">trueOfFalse</a></span>(int&nbsp;input)</code>
+<div class="block">将 <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#TRUE">TRUE</a> 或者 <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#FALSE">FALSE</a> 转换为 bool 值</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -361,6 +365,13 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>trueOfFalse</h4>
 <pre>public static&nbsp;int&nbsp;trueOfFalse(boolean&nbsp;input)</pre>
+<div class="block">将 bool 值转换为 <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#TRUE">TRUE</a> 或者 <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#FALSE">FALSE</a></div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>input</code> - 待转换的 bool 值</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>当 input 为 true 时，返回 <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#TRUE">TRUE</a>, 否则返回 <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#FALSE">FALSE</a></dd>
+</dl>
 </li>
 </ul>
 <a name="trueOfFalse-int-">
@@ -370,6 +381,13 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>trueOfFalse</h4>
 <pre>public static&nbsp;boolean&nbsp;trueOfFalse(int&nbsp;input)</pre>
+<div class="block">将 <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#TRUE">TRUE</a> 或者 <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#FALSE">FALSE</a> 转换为 bool 值</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>input</code> - <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#TRUE">TRUE</a> 或者 <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#FALSE">FALSE</a></dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>当 input 为 <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#TRUE">TRUE</a> 时, 返回 true, 否则返回 false.</dd>
+</dl>
 </li>
 </ul>
 <a name="isIdMatch-long-long-">
@@ -380,7 +398,16 @@ extends java.lang.Object</pre>
 <h4>isIdMatch</h4>
 <pre>public static&nbsp;boolean&nbsp;isIdMatch(long&nbsp;id1,
                                 long&nbsp;id2)</pre>
-<div class="block">当两个 id 相等或者其中任意一个 id 为 ID_ANY 时，则匹配成功。</div>
+<div class="block">当两个 id 相等或者其中任意一个 id 为 <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#ID_ANY">ID_ANY</a> 时，则匹配成功。</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>id1</code> - 待比较的 id</dd>
+<dd><code>id2</code> - 待比较的 id</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>匹配成功返回 true, 否则返回 false.</dd>
+<dt><span class="seeLabel">另请参阅:</span></dt>
+<dd><a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#ID_ANY"><code>ID_ANY</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="checkLogicTrueOrFalse-int-">
@@ -391,6 +418,8 @@ extends java.lang.Object</pre>
 <h4>checkLogicTrueOrFalse</h4>
 <pre>public static&nbsp;void&nbsp;checkLogicTrueOrFalse(int&nbsp;logicTrueOfFalse)</pre>
 <dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>logicTrueOfFalse</code> - 参数必须是 <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#TRUE">TRUE</a> 或者 <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#FALSE">FALSE</a>, 否则抛出异常.</dd>
 <dt><span class="seeLabel">另请参阅:</span></dt>
 <dd><a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#TRUE"><code>TRUE</code></a>, 
 <a href="../../../../com/masonsoft/imsdk/core/IMConstants.html#FALSE"><code>FALSE</code></a></dd>

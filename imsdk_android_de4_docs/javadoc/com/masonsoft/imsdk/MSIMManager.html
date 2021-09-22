@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
 var tabs = {65535:["t0","所有方法"],1:["t1","静态方法"],2:["t2","实例方法"],8:["t4","具体方法"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -212,12 +212,16 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMManager.html#setFileUploadProvider-com.masonsoft.imsdk.core.FileUploadProvider-">setFileUploadProvider</a></span>(<a href="../../../com/masonsoft/imsdk/core/FileUploadProvider.html" title="com.masonsoft.imsdk.core中的接口">FileUploadProvider</a>&nbsp;fileUploadProvider)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMManager.html#setFileUploadProvider-com.masonsoft.imsdk.core.FileUploadProvider-">setFileUploadProvider</a></span>(<a href="../../../com/masonsoft/imsdk/core/FileUploadProvider.html" title="com.masonsoft.imsdk.core中的接口">FileUploadProvider</a>&nbsp;fileUploadProvider)</code>
+<div class="block">设置文件上传服务</div>
+</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMManager.html#setSession-java.lang.String-java.lang.String-">setSession</a></span>(java.lang.String&nbsp;token,
-          java.lang.String&nbsp;tcpServerAndPort)</code>&nbsp;</td>
+          java.lang.String&nbsp;tcpServerAndPort)</code>
+<div class="block">强制覆盖登录信息，并不检查是否登录成功，底层会自动尝试登录。</div>
+</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -230,15 +234,38 @@ extends java.lang.Object</pre>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../com/masonsoft/imsdk/lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMManager.html#signInWithBlock-java.lang.String-java.lang.String-">signInWithBlock</a></span>(java.lang.String&nbsp;token,
-               java.lang.String&nbsp;tcpServerAndPort)</code>&nbsp;</td>
+               java.lang.String&nbsp;tcpServerAndPort)</code>
+<div class="block">登录并等待返回结果</div>
+</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMManager.html#signOut-com.masonsoft.imsdk.MSIMCallback-">signOut</a></span>(<a href="../../../com/masonsoft/imsdk/MSIMCallback.html" title="com.masonsoft.imsdk中的接口">MSIMCallback</a>&lt;<a href="../../../com/masonsoft/imsdk/lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a>&gt;&nbsp;callback)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMManager.html#signOut-com.masonsoft.imsdk.MSIMCallback-">signOut</a></span>(<a href="../../../com/masonsoft/imsdk/MSIMCallback.html" title="com.masonsoft.imsdk中的接口">MSIMCallback</a>&lt;<a href="../../../com/masonsoft/imsdk/lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a>&gt;&nbsp;callback)</code>
+<div class="block">退出登录</div>
+</td>
 </tr>
 <tr id="i18" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMManager.html#signOut-com.masonsoft.imsdk.MSIMCallback-long-">signOut</a></span>(<a href="../../../com/masonsoft/imsdk/MSIMCallback.html" title="com.masonsoft.imsdk中的接口">MSIMCallback</a>&lt;<a href="../../../com/masonsoft/imsdk/lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a>&gt;&nbsp;callback,
+       long&nbsp;timeOutMs)</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMManager.html#signOutImmediately--">signOutImmediately</a></span>()</code>
+<div class="block">立即退出登录。</div>
+</td>
+</tr>
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../com/masonsoft/imsdk/lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMManager.html#signOutWithBlock--">signOutWithBlock</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMManager.html#signOutWithBlock--">signOutWithBlock</a></span>()</code>
+<div class="block">退出登录并等待返回结果</div>
+</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code><a href="../../../com/masonsoft/imsdk/lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMManager.html#signOutWithBlock-long-">signOutWithBlock</a></span>(long&nbsp;timeOutMs)</code>
+<div class="block">尽可能向服务器发送退出登录的消息，并等待服务器返回确认退出的消息，或者触发超时立即清空本地登录信息并关闭长连接。</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -424,6 +451,14 @@ extends java.lang.Object</pre>
 <h4>signInWithBlock</h4>
 <pre>public&nbsp;<a href="../../../com/masonsoft/imsdk/lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a>&nbsp;signInWithBlock(java.lang.String&nbsp;token,
                                      java.lang.String&nbsp;tcpServerAndPort)</pre>
+<div class="block">登录并等待返回结果</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>token</code> - 业务方获得的用于登录 IM 的用户 token</dd>
+<dd><code>tcpServerAndPort</code> - 业务方获得的用于登录 IM 长连接地址</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>登录结果</dd>
+</dl>
 </li>
 </ul>
 <a name="signOut-com.masonsoft.imsdk.MSIMCallback-">
@@ -433,6 +468,25 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>signOut</h4>
 <pre>public&nbsp;void&nbsp;signOut(<a href="../../../com/masonsoft/imsdk/MSIMCallback.html" title="com.masonsoft.imsdk中的接口">MSIMCallback</a>&lt;<a href="../../../com/masonsoft/imsdk/lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a>&gt;&nbsp;callback)</pre>
+<div class="block">退出登录</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>callback</code> - 退出登录结果回调。内部是以强引用的方式持有该回调，谨慎处理内存泄漏问题。</dd>
+</dl>
+</li>
+</ul>
+<a name="signOut-com.masonsoft.imsdk.MSIMCallback-long-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>signOut</h4>
+<pre>public&nbsp;void&nbsp;signOut(<a href="../../../com/masonsoft/imsdk/MSIMCallback.html" title="com.masonsoft.imsdk中的接口">MSIMCallback</a>&lt;<a href="../../../com/masonsoft/imsdk/lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a>&gt;&nbsp;callback,
+                    long&nbsp;timeOutMs)</pre>
+<dl>
+<dt><span class="seeLabel">另请参阅:</span></dt>
+<dd><a href="../../../com/masonsoft/imsdk/MSIMManager.html#signOutWithBlock-long-"><code>signOutWithBlock(long)</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="signOutWithBlock--">
@@ -442,6 +496,58 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>signOutWithBlock</h4>
 <pre>public&nbsp;<a href="../../../com/masonsoft/imsdk/lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a>&nbsp;signOutWithBlock()</pre>
+<div class="block">退出登录并等待返回结果</div>
+<dl>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>退出登录结果</dd>
+</dl>
+</li>
+</ul>
+<a name="signOutWithBlock-long-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>signOutWithBlock</h4>
+<pre>public&nbsp;<a href="../../../com/masonsoft/imsdk/lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a>&nbsp;signOutWithBlock(long&nbsp;timeOutMs)</pre>
+<div class="block">尽可能向服务器发送退出登录的消息，并等待服务器返回确认退出的消息，或者触发超时立即清空本地登录信息并关闭长连接。<br>
+ 注意：超时时长不是一个精确触发值。通常在不超过 2000ms 的倍数内触发。<br>
+ 例如（最佳实践）：
+ <pre>
+ <code>
+
+     // WorkerThread
+     MSIMManager.getInstance().signOutWithBlock(100);
+
+ </code>
+ </pre>
+ 如果业务需要一个精确的超时退出登录的逻辑(不建议)，可以组合 <a href="../../../com/masonsoft/imsdk/MSIMManager.html#signOut-com.masonsoft.imsdk.MSIMCallback-long-">signOut(MSIMCallback, long)</a>
+ 与 <a href="../../../com/masonsoft/imsdk/MSIMManager.html#signOutImmediately--">signOutImmediately()</a> 来实现，例如：
+ <pre>
+ <code>
+
+     // 实现一个精确的等待 100 毫秒的退出登录逻辑
+     // WorkerThread
+     MSIMManager.getInstance().signOut(null);
+     Threads.sleepQuietly(100);
+     MSIMManager.getInstance().signOutImmediately();
+
+ </code>
+ </pre></div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>timeOutMs</code> - 超时时间, 单位毫秒.</dd>
+</dl>
+</li>
+</ul>
+<a name="signOutImmediately--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>signOutImmediately</h4>
+<pre>public&nbsp;void&nbsp;signOutImmediately()</pre>
+<div class="block">立即退出登录。注意：此退出登录的方式不会告诉服务器客户端已经退出，会清空本地登录信息并强制中断长连接。</div>
 </li>
 </ul>
 <a name="getSessionUserId--">
@@ -470,6 +576,12 @@ extends java.lang.Object</pre>
 <h4>setSession</h4>
 <pre>public&nbsp;void&nbsp;setSession(java.lang.String&nbsp;token,
                        java.lang.String&nbsp;tcpServerAndPort)</pre>
+<div class="block">强制覆盖登录信息，并不检查是否登录成功，底层会自动尝试登录。通常用来恢复登录信息。</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>token</code> - 业务方获得的用于登录 IM 的用户 token</dd>
+<dd><code>tcpServerAndPort</code> - 业务方获得的用于登录 IM 长连接地址</dd>
+</dl>
 </li>
 </ul>
 <a name="getFileUploadProvider--">
@@ -488,6 +600,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setFileUploadProvider</h4>
 <pre>public&nbsp;void&nbsp;setFileUploadProvider(<a href="../../../com/masonsoft/imsdk/core/FileUploadProvider.html" title="com.masonsoft.imsdk.core中的接口">FileUploadProvider</a>&nbsp;fileUploadProvider)</pre>
+<div class="block">设置文件上传服务</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>fileUploadProvider</code> - 业务方实现的文件上传服务</dd>
+</dl>
 </li>
 </ul>
 <a name="getMessageManager--">

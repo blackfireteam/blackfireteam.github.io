@@ -211,7 +211,9 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMConstants.MessageType.html#isCustomMessage-int-">isCustomMessage</a></span>(int&nbsp;type)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMConstants.MessageType.html#isCustomMessage-int-">isCustomMessage</a></span>(int&nbsp;type)</code>
+<div class="block">是否是自定义消息</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
@@ -370,6 +372,12 @@ extends java.lang.Object</pre>
 <h4>isVisibleMessage</h4>
 <pre>public static&nbsp;boolean&nbsp;isVisibleMessage(int&nbsp;type)</pre>
 <div class="block">是否是可见的消息。可见的消息会出现在聊天页面中。如：文字消息是一种可见消息，指令消息是一种不见消息。</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>type</code> - 消息类型</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>如果该消息类型是可见消息返回 true, 否则返回 false.</dd>
+</dl>
 </li>
 </ul>
 <a name="isCountMessage-int-">
@@ -380,6 +388,12 @@ extends java.lang.Object</pre>
 <h4>isCountMessage</h4>
 <pre>public static&nbsp;boolean&nbsp;isCountMessage(int&nbsp;type)</pre>
 <div class="block">是否是需要累计未读数的消息</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>type</code> - 消息类型</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>如果该消息类型需要累计未读数返回 true, 否则返回 false.</dd>
+</dl>
 </li>
 </ul>
 <a name="isCustomMessage-int-">
@@ -389,6 +403,13 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>isCustomMessage</h4>
 <pre>public static&nbsp;boolean&nbsp;isCustomMessage(int&nbsp;type)</pre>
+<div class="block">是否是自定义消息</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>type</code> - 消息类型</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>如果是自定义消息类型返回 true, 否则返回 false.</dd>
+</dl>
 </li>
 </ul>
 </li>

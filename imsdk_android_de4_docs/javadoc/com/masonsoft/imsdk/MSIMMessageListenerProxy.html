@@ -118,6 +118,8 @@ implements <a href="../../../com/masonsoft/imsdk/MSIMMessageListener.html" title
 <dl>
 <dt><span class="simpleTagLabel">从以下版本开始:</span></dt>
 <dd>1.0</dd>
+<dt><span class="seeLabel">另请参阅:</span></dt>
+<dd><a href="../../../com/masonsoft/imsdk/MSIMMessageListener.html" title="com.masonsoft.imsdk中的接口"><code>MSIMMessageListener</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -161,11 +163,15 @@ implements <a href="../../../com/masonsoft/imsdk/MSIMMessageListener.html" title
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMMessageListenerProxy.html#dispatch-java.lang.Object-java.lang.Runnable-">dispatch</a></span>(java.lang.Object&nbsp;tag,
-        java.lang.Runnable&nbsp;runnable)</code>&nbsp;</td>
+        java.lang.Runnable&nbsp;runnable)</code>
+<div class="block">排队执行 runnable.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMMessageListenerProxy.html#dispatch-java.lang.Runnable-">dispatch</a></span>(java.lang.Runnable&nbsp;runnable)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMMessageListenerProxy.html#dispatch-java.lang.Runnable-">dispatch</a></span>(java.lang.Runnable&nbsp;runnable)</code>
+<div class="block">排队执行 runnable</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
@@ -337,6 +343,13 @@ implements <a href="../../../com/masonsoft/imsdk/MSIMMessageListener.html" title
 <li class="blockList">
 <h4>dispatch</h4>
 <pre>protected&nbsp;void&nbsp;dispatch(java.lang.Runnable&nbsp;runnable)</pre>
+<div class="block">排队执行 runnable</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>runnable</code> - 待执行的任务</dd>
+<dt><span class="seeLabel">另请参阅:</span></dt>
+<dd><a href="../../../com/masonsoft/imsdk/MSIMMessageListenerProxy.html#dispatch-java.lang.Object-java.lang.Runnable-"><code>dispatch(Object, Runnable)</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="dispatch-java.lang.Object-java.lang.Runnable-">
@@ -347,6 +360,12 @@ implements <a href="../../../com/masonsoft/imsdk/MSIMMessageListener.html" title
 <h4>dispatch</h4>
 <pre>protected&nbsp;void&nbsp;dispatch(java.lang.Object&nbsp;tag,
                         java.lang.Runnable&nbsp;runnable)</pre>
+<div class="block">排队执行 runnable. 如果待执行队列中已经存在相同的 tag, 则新的 runnable 会覆盖旧记录。如果 tag 为空，则总是不覆盖。</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>tag</code> - 用于去重的标记，如果为 null, 则总是不去重</dd>
+<dd><code>runnable</code> - 待执行的任务</dd>
+</dl>
 </li>
 </ul>
 </li>

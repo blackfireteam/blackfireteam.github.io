@@ -110,7 +110,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">MSIMConversation</span>
 extends java.lang.Object</pre>
-<div class="block">会话</div>
+<div class="block">一个会话信息</div>
 <dl>
 <dt><span class="simpleTagLabel">从以下版本开始:</span></dt>
 <dd>1.0</dd>
@@ -222,7 +222,9 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMConversation.html#isDelete--">isDelete</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/masonsoft/imsdk/MSIMConversation.html#isDelete--">isDelete</a></span>()</code>
+<div class="block">该会话是否已删除</div>
+</td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -261,6 +263,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getSessionUserId</h4>
 <pre>public&nbsp;long&nbsp;getSessionUserId()</pre>
+<dl>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>该会话关联的己方用户 id</dd>
+</dl>
 </li>
 </ul>
 <a name="getSessionUserId-long-">
@@ -279,6 +285,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getConversationId</h4>
 <pre>public&nbsp;long&nbsp;getConversationId()</pre>
+<dl>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>会话的本地数据库 id</dd>
+</dl>
 </li>
 </ul>
 <a name="getConversationId-long-">
@@ -297,6 +307,12 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getConversationType</h4>
 <pre>public&nbsp;int&nbsp;getConversationType()</pre>
+<dl>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>会话类型</dd>
+<dt><span class="seeLabel">另请参阅:</span></dt>
+<dd><a href="../../../com/masonsoft/imsdk/MSIMConstants.ConversationType.html" title="com.masonsoft.imsdk中的类"><code>MSIMConstants.ConversationType</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="getConversationType-int-">
@@ -315,6 +331,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getLastReadServerMessageId</h4>
 <pre>public&nbsp;long&nbsp;getLastReadServerMessageId()</pre>
+<dl>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>该会话中最后一条已读的服务器消息 id</dd>
+</dl>
 </li>
 </ul>
 <a name="getLastReadServerMessageId-long-">
@@ -333,6 +353,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getLastModify</h4>
 <pre>public&nbsp;long&nbsp;getLastModify()</pre>
+<dl>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>该会话的本地最后修改时间（毫秒）</dd>
+</dl>
 </li>
 </ul>
 <a name="getLastModify-long-">
@@ -351,6 +375,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getSeq</h4>
 <pre>public&nbsp;long&nbsp;getSeq()</pre>
+<dl>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>该会话的本地排序值，用于分页读取会话列表</dd>
+</dl>
 </li>
 </ul>
 <a name="getSeq-long-">
@@ -369,6 +397,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getTargetUserId</h4>
 <pre>public&nbsp;long&nbsp;getTargetUserId()</pre>
+<dl>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>该会话关联的对方用户 id</dd>
+</dl>
 </li>
 </ul>
 <a name="getTargetUserId-long-">
@@ -387,6 +419,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getUnreadCount</h4>
 <pre>public&nbsp;long&nbsp;getUnreadCount()</pre>
+<dl>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>该会话的未读消息数</dd>
+</dl>
 </li>
 </ul>
 <a name="getUnreadCount-long-">
@@ -405,6 +441,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getShowMessageId</h4>
 <pre>public&nbsp;long&nbsp;getShowMessageId()</pre>
+<dl>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>该会话上应当展示的最后一条消息的 id (本地消息 id)</dd>
+</dl>
 </li>
 </ul>
 <a name="getShowMessageId-long-">
@@ -423,6 +463,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getTimeMs</h4>
 <pre>public&nbsp;long&nbsp;getTimeMs()</pre>
+<dl>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>会话的展示时间. 通常与 <a href="../../../com/masonsoft/imsdk/MSIMConversation.html#getShowMessageId--">getShowMessageId()</a> 对应的消息的时间相同.</dd>
+</dl>
 </li>
 </ul>
 <a name="getTimeMs-long-">
@@ -441,6 +485,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>isDelete</h4>
 <pre>public&nbsp;boolean&nbsp;isDelete()</pre>
+<div class="block">该会话是否已删除</div>
+<dl>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>如果该会话已删除返回 true, 否则返回 false.</dd>
+</dl>
 </li>
 </ul>
 <a name="isDelete-boolean-">
@@ -459,6 +508,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getExt</h4>
 <pre>public&nbsp;<a href="../../../com/masonsoft/imsdk/MSIMConversationExt.html" title="com.masonsoft.imsdk中的类">MSIMConversationExt</a>&nbsp;getExt()</pre>
+<dl>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>该会话的扩展信息</dd>
+</dl>
 </li>
 </ul>
 <a name="toString--">

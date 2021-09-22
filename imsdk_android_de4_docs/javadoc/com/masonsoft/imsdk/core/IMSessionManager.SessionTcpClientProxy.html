@@ -212,8 +212,8 @@ implements <a href="../../../../com/masonsoft/imsdk/core/observable/SessionTcpCl
 <li class="blockList">
 <h4>isOnline</h4>
 <pre>public&nbsp;boolean&nbsp;isOnline()</pre>
-<div class="block">判断当前长连接是否在线。当长连接不在线时，不能够发送消息。长连接在线的含义是：长连接建立成功并且认证通过。
- 认证消息(登录消息)在长连接内部自动维护(长连接首次建立成功时会自动发送登录消息)。</div>
+<div class="block">判断当前长连接是否在线。当长连接不在线时，不能够发送消息。长连接在线的含义是：长连接建立成功并且认证通过,
+ 同时没有请求过退出登录。认证消息(登录消息)在长连接内部自动维护(长连接首次建立成功时会自动发送登录消息)。</div>
 </li>
 </ul>
 <a name="getSessionTcpClient--">

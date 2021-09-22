@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":9,"i13":10,"i14":10,"i15":10,"i16":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":9,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","所有方法"],1:["t1","静态方法"],2:["t2","实例方法"],8:["t4","具体方法"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -178,71 +178,81 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#getInstance--">getInstance</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#getLastSignInSuccessTokenOrEmpty--">getLastSignInSuccessTokenOrEmpty</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/masonsoft/imsdk/core/session/Session.html" title="com.masonsoft.imsdk.core.session中的类">Session</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#getSession--">getSession</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.SessionTcpClientProxy.html" title="com.masonsoft.imsdk.core中的类">IMSessionManager.SessionTcpClientProxy</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#getSessionTcpClientProxy--">getSessionTcpClientProxy</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.SessionTcpClientProxyConfig.html" title="com.masonsoft.imsdk.core中的类">IMSessionManager.SessionTcpClientProxyConfig</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#getSessionTcpClientProxyConfig--">getSessionTcpClientProxyConfig</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.SessionTcpClientProxy.html" title="com.masonsoft.imsdk.core中的类">IMSessionManager.SessionTcpClientProxy</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#getSessionTcpClientProxyWithBlockOrTimeout--">getSessionTcpClientProxyWithBlockOrTimeout</a></span>()</code>
 <div class="block">尽可能获取一个可用的长连接，如果长连接暂时不可用，则会先 block, 直到长连接恢复或者超时.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#getSessionUserId--">getSessionUserId</a></span>()</code>
 <div class="block">获取当前 session 对应的用户 id<br/>
  此 session user id 可能是从历史缓存中获取的，也可能是从当前成功登录的长连接上获取的。</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/masonsoft/imsdk/lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#getSessionUserIdWithBlockOrTimeout--">getSessionUserIdWithBlockOrTimeout</a></span>()</code>
 <div class="block">尽可能获取一个可用的登录用户 id，如果长连接上的登录用户信息暂时暂时无效，则会先 block, 直到登录成功或者超时.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#isSignOut--">isSignOut</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#recreateSessionTcpClient--">recreateSessionTcpClient</a></span>()</code>
 <div class="block">终止旧的长连接，建立新的长连接(如果存在有效的登录信息)</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#setConversationListLastSyncTimeBySessionUserId-long-long-">setConversationListLastSyncTimeBySessionUserId</a></span>(long&nbsp;sessionUserId,
                                               long&nbsp;syncTime)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#setSession-com.masonsoft.imsdk.core.session.Session-">setSession</a></span>(<a href="../../../../com/masonsoft/imsdk/core/session/Session.html" title="com.masonsoft.imsdk.core.session中的类">Session</a>&nbsp;session)</code>
 <div class="block">设置当前的登录信息。</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#setSessionUserId-com.masonsoft.imsdk.core.session.Session-long-">setSessionUserId</a></span>(<a href="../../../../com/masonsoft/imsdk/core/session/Session.html" title="com.masonsoft.imsdk.core.session中的类">Session</a>&nbsp;session,
                 long&nbsp;sessionUserId)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#signOutImmediately--">signOutImmediately</a></span>()</code>
 <div class="block">直接断开长连接, 清空 token</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/masonsoft/imsdk/lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#signOutWithBlockOrTimeout--">signOutWithBlockOrTimeout</a></span>()</code>
+<div class="block">尽可能从长连接上发送退出登录的消息，如果长连接暂时无效，则会先 block, 直到成功发送退出消息或者超时.</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="../../../../com/masonsoft/imsdk/lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#signOutWithBlockOrTimeout-long-">signOutWithBlockOrTimeout</a></span>(long&nbsp;timeOutMs)</code>
 <div class="block">尽可能从长连接上发送退出登录的消息，如果长连接暂时无效，则会先 block, 直到成功发送退出消息或者超时.</div>
 </td>
 </tr>
@@ -343,6 +353,24 @@ extends java.lang.Object</pre>
 <h4>signOutWithBlockOrTimeout</h4>
 <pre>public&nbsp;<a href="../../../../com/masonsoft/imsdk/lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a>&nbsp;signOutWithBlockOrTimeout()</pre>
 <div class="block">尽可能从长连接上发送退出登录的消息，如果长连接暂时无效，则会先 block, 直到成功发送退出消息或者超时.</div>
+<dl>
+<dt><span class="seeLabel">另请参阅:</span></dt>
+<dd><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#signOutWithBlockOrTimeout-long-"><code>signOutWithBlockOrTimeout(long)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="signOutWithBlockOrTimeout-long-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>signOutWithBlockOrTimeout</h4>
+<pre>public&nbsp;<a href="../../../../com/masonsoft/imsdk/lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a>&nbsp;signOutWithBlockOrTimeout(long&nbsp;timeOutMs)</pre>
+<div class="block">尽可能从长连接上发送退出登录的消息，如果长连接暂时无效，则会先 block, 直到成功发送退出消息或者超时.</div>
+<dl>
+<dt><span class="seeLabel">另请参阅:</span></dt>
+<dd><a href="../../../../com/masonsoft/imsdk/core/IMSessionManager.html#signOutWithBlockOrTimeout--"><code>signOutWithBlockOrTimeout()</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="destroySessionTcpClient--">
@@ -432,11 +460,20 @@ extends java.lang.Object</pre>
 <a name="setSessionUserId-com.masonsoft.imsdk.core.session.Session-long-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setSessionUserId</h4>
 <pre>public&nbsp;void&nbsp;setSessionUserId(<a href="../../../../com/masonsoft/imsdk/core/session/Session.html" title="com.masonsoft.imsdk.core.session中的类">Session</a>&nbsp;session,
                              long&nbsp;sessionUserId)</pre>
+</li>
+</ul>
+<a name="getLastSignInSuccessTokenOrEmpty--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getLastSignInSuccessTokenOrEmpty</h4>
+<pre>public&nbsp;java.lang.String&nbsp;getLastSignInSuccessTokenOrEmpty()</pre>
 </li>
 </ul>
 </li>
