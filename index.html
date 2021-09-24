@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style scoped>
+    .home_wrapper {
+      width: 1200px;
+      margin: auto;
+    }
+    .hearder_wrapper {
+      text-align: center;
+    }
+    .logo {
+      width: 100px;
+      border-radius: 50%;
+      margin: 20px;
+    }
+    .tab_wrapper {
+      text-align: center;
+      border-bottom: 1px solid #42b983;
+    }
+    .tab_item {
+      font-size: 20px;
+      line-height: 60px;
+      margin: 0 40px;
+      text-decoration: none;
+      color: #42b983;
+    }
+    .module_wrapper {
+      margin: 40px 0;
+    }
+    .module_title {
+      font-size: 30px;
+      color: #3e8cb7;
+    }
+    .module_item {
+      height: 362px;
+    }
+    .module_item_title {
+      display: block;
+      font-size: 20px;
+      line-height: 60px;
+      color: #666;
+      text-decoration: none;
+    }
+    .module_item_logo {
+      width: 300px;
+      border: 1px solid #3e8cb7;
+    }
+    .module_item_logo:hover {
+      height: 0;
+      border: 0;
+      overflow: hidden;
+    }
+    .module_item_logo:hover + .module_item_describe {
+      display: block;
+    }
+    .module_item_describe {
+      font-size: 16px;
+      color: #666;
+      display: none;
+    }
+    ul {
+      list-style: none;
+    }
+    ul,
+    li,
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <body>
+    <div class="home_wrapper">
+      <div class="hearder_wrapper">
+        <img
+          class="logo"
+          src="https://square.github.io/repo_images/beancounter.jpg"
+          alt=""
+        />
+      </div>
+      <div class="tab_wrapper">
+        <a class="tab_item" href="Android">Android</a>
+        <a class="tab_item" href="IOS">IOS</a>
+        <a class="tab_item" href="Web">Web</a>
+      </div>
+      <div class="main_wrapper">
+        <div id="Android" class="module_wrapper">
+          <div class="module_title">Android</div>
+          <ul class="module_list">
+            <li class="module_item">
+              <a
+                class="module_item_title"
+                href="./imsdk_android_de4_docs/javadoc"
+                >imsdk_android_de4_docs</a
+              >
+              <img
+                class="module_item_logo"
+                src="https://square.github.io/repo_images/beancounter.jpg"
+                alt=""
+              />
+              <div class="module_item_describe">imsdk_android_de4_docs</div>
+            </li>
+          </ul>
+        </div>
+        <div id="IOS" class="module_wrapper">
+          <div class="module_title">IOS</div>
+        </div>
+        <div id="Web" class="module_wrapper">
+          <div class="module_title">Web</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
