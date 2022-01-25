@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","\u6240\u6709\u65B9\u6CD5"],2:["t2","\u5B9E\u4F8B\u65B9\u6CD5"],8:["t4","\u5177\u4F53\u65B9\u6CD5"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -218,12 +218,27 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readFlashImage(long,com.masonsoft.imsdk.MSIMMessage)">readFlashImage</a></span>&#8203;(long&nbsp;sessionUserId,
+              <a href="MSIMMessage.html" title="com.masonsoft.imsdk中的类">MSIMMessage</a>&nbsp;message)</code></th>
+<td class="colLast">
+<div class="block">点开(已读)闪照消息（尚未发送成功的闪照消息不支持标记为已读）</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readFlashImage(long,com.masonsoft.imsdk.MSIMMessage,com.masonsoft.imsdk.MSIMCallback)">readFlashImage</a></span>&#8203;(long&nbsp;sessionUserId,
+              <a href="MSIMMessage.html" title="com.masonsoft.imsdk中的类">MSIMMessage</a>&nbsp;message,
+              <a href="MSIMCallback.html" title="com.masonsoft.imsdk中的接口">MSIMCallback</a>&lt;<a href="lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a>&gt;&nbsp;callback)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeMessageListener(com.masonsoft.imsdk.MSIMMessageListener)">removeMessageListener</a></span>&#8203;(<a href="MSIMMessageListener.html" title="com.masonsoft.imsdk中的接口">MSIMMessageListener</a>&nbsp;listener)</code></th>
 <td class="colLast">
 <div class="block">移除消息变更监听器</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resendMessage(long,com.masonsoft.imsdk.MSIMMessage)">resendMessage</a></span>&#8203;(long&nbsp;sessionUserId,
              <a href="MSIMMessage.html" title="com.masonsoft.imsdk中的类">MSIMMessage</a>&nbsp;message)</code></th>
@@ -231,7 +246,7 @@ extends java.lang.Object</pre>
 <div class="block">异步重新发送一个已经发送失败的消息</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resendMessage(long,com.masonsoft.imsdk.MSIMMessage,com.masonsoft.imsdk.MSIMCallback)">resendMessage</a></span>&#8203;(long&nbsp;sessionUserId,
              <a href="MSIMMessage.html" title="com.masonsoft.imsdk中的类">MSIMMessage</a>&nbsp;message,
@@ -240,7 +255,7 @@ extends java.lang.Object</pre>
 <div class="block">异步重新发送一个已经发送失败的消息</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#revoke(long,com.masonsoft.imsdk.MSIMMessage)">revoke</a></span>&#8203;(long&nbsp;sessionUserId,
       <a href="MSIMMessage.html" title="com.masonsoft.imsdk中的类">MSIMMessage</a>&nbsp;message)</code></th>
@@ -248,27 +263,27 @@ extends java.lang.Object</pre>
 <div class="block">撤回一条消息(只能撤回己方发送成功的消息)</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#revoke(long,com.masonsoft.imsdk.MSIMMessage,com.masonsoft.imsdk.MSIMCallback)">revoke</a></span>&#8203;(long&nbsp;sessionUserId,
       <a href="MSIMMessage.html" title="com.masonsoft.imsdk中的类">MSIMMessage</a>&nbsp;message,
       <a href="MSIMCallback.html" title="com.masonsoft.imsdk中的接口">MSIMCallback</a>&lt;<a href="lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a>&gt;&nbsp;callback)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendMessage(long,com.masonsoft.imsdk.MSIMMessage,long)">sendMessage</a></span>&#8203;(long&nbsp;sessionUserId,
            <a href="MSIMMessage.html" title="com.masonsoft.imsdk中的类">MSIMMessage</a>&nbsp;message,
-           long&nbsp;receiver)</code></th>
+           long&nbsp;toUserId)</code></th>
 <td class="colLast">
 <div class="block">将消息入库，然后异步发送</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendMessage(long,com.masonsoft.imsdk.MSIMMessage,long,com.masonsoft.imsdk.MSIMCallback)">sendMessage</a></span>&#8203;(long&nbsp;sessionUserId,
            <a href="MSIMMessage.html" title="com.masonsoft.imsdk中的类">MSIMMessage</a>&nbsp;message,
-           long&nbsp;receiver,
+           long&nbsp;toUserId,
            <a href="MSIMCallback.html" title="com.masonsoft.imsdk中的接口">MSIMCallback</a>&lt;<a href="lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a>&gt;&nbsp;callback)</code></th>
 <td class="colLast">
 <div class="block">将消息入库，然后异步发送</div>
@@ -345,7 +360,7 @@ extends java.lang.Object</pre>
 <pre class="methodSignature">public&nbsp;void&nbsp;sendMessage&#8203;(long&nbsp;sessionUserId,
                         @NonNull
                         <a href="MSIMMessage.html" title="com.masonsoft.imsdk中的类">MSIMMessage</a>&nbsp;message,
-                        long&nbsp;receiver)</pre>
+                        long&nbsp;toUserId)</pre>
 <div class="block">将消息入库，然后异步发送</div>
 </li>
 </ul>
@@ -358,7 +373,7 @@ extends java.lang.Object</pre>
 <pre class="methodSignature">public&nbsp;void&nbsp;sendMessage&#8203;(long&nbsp;sessionUserId,
                         @NonNull
                         <a href="MSIMMessage.html" title="com.masonsoft.imsdk中的类">MSIMMessage</a>&nbsp;message,
-                        long&nbsp;receiver,
+                        long&nbsp;toUserId,
                         @Nullable
                         <a href="MSIMCallback.html" title="com.masonsoft.imsdk中的接口">MSIMCallback</a>&lt;<a href="lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a>&gt;&nbsp;callback)</pre>
 <div class="block">将消息入库，然后异步发送</div>
@@ -446,6 +461,36 @@ extends java.lang.Object</pre>
                    <a href="MSIMMessage.html" title="com.masonsoft.imsdk中的类">MSIMMessage</a>&nbsp;message,
                    @Nullable
                    <a href="MSIMCallback.html" title="com.masonsoft.imsdk中的接口">MSIMCallback</a>&lt;<a href="lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a>&gt;&nbsp;callback)</pre>
+</li>
+</ul>
+<a id="readFlashImage(long,com.masonsoft.imsdk.MSIMMessage)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readFlashImage</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;readFlashImage&#8203;(long&nbsp;sessionUserId,
+                           @NonNull
+                           <a href="MSIMMessage.html" title="com.masonsoft.imsdk中的类">MSIMMessage</a>&nbsp;message)</pre>
+<div class="block">点开(已读)闪照消息（尚未发送成功的闪照消息不支持标记为已读）</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>sessionUserId</code> - 登录的用户</dd>
+<dd><code>message</code> - 闪照消息</dd>
+</dl>
+</li>
+</ul>
+<a id="readFlashImage(long,com.masonsoft.imsdk.MSIMMessage,com.masonsoft.imsdk.MSIMCallback)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readFlashImage</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;readFlashImage&#8203;(long&nbsp;sessionUserId,
+                           @NonNull
+                           <a href="MSIMMessage.html" title="com.masonsoft.imsdk中的类">MSIMMessage</a>&nbsp;message,
+                           @Nullable
+                           <a href="MSIMCallback.html" title="com.masonsoft.imsdk中的接口">MSIMCallback</a>&lt;<a href="lang/GeneralResult.html" title="com.masonsoft.imsdk.lang中的类">GeneralResult</a>&gt;&nbsp;callback)</pre>
 </li>
 </ul>
 <a id="getMessage(long,int,long,long)">
